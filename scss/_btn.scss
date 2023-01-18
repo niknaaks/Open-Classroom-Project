@@ -1,0 +1,21 @@
+// .btn {
+//   &--primary {
+//     background-color: $primary;
+
+//     &:hover {
+//       background-color: darken($primary, 15)
+//     }
+//   }
+// }
+
+
+
+@each $key, $val in $colours {
+  .btn-#{$key} {
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,23 @@
+
+
+//gradients
+
+.btn-primary {
+    background-image: linear-gradient(to top left, $primary, $secondary);
+;
+
+}
+
+//background and text colours 
+@each $key, $val in $colours {
+    .text-#{$key} {
+        color: $val;
+    }
+
+    .bg-#{$key} {
+        background-color: $val;
+    }
+};
+
+
+

@@ -1,0 +1,34 @@
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.card__img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: $border-radius;
+  border: $border-card;
+  overflow: hidden;
+
+  &__img {
+    width: 100%;
+    max-height: 100%;
+    height: 150px;
+    
+  }
+
+  &__body {
+    padding: 5px;
+  }
+}

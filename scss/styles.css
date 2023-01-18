@@ -1,0 +1,176 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.card__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 25px;
+  border: solid 5px #fff;
+  overflow: hidden;
+}
+.card__img {
+  width: 100%;
+  max-height: 100%;
+  height: 150px;
+}
+.card__body {
+  padding: 5px;
+}
+
+.btn-primary {
+  background-image: linear-gradient(to top left, #9356DC, #FF79DA);
+}
+
+.text-primary {
+  color: #9356DC;
+}
+
+.bg-primary {
+  background-color: #9356DC;
+}
+
+.text-secondary {
+  color: #FF79DA;
+}
+
+.bg-secondary {
+  background-color: #FF79DA;
+}
+
+.text-gradient {
+  color: linear-gradient(right, #9356DC 50%, #FF79DA 50%);
+}
+
+.bg-gradient {
+  background-color: linear-gradient(right, #9356DC 50%, #FF79DA 50%);
+}
+
+.text-grey {
+  color: #D3D3D3;
+}
+
+.bg-grey {
+  background-color: #D3D3D3;
+}
+
+.text-light-grey {
+  color: #f6f6f6;
+}
+
+.bg-light-grey {
+  background-color: #f6f6f6;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.text-green {
+  color: #99e2d0;
+}
+
+.bg-green {
+  background-color: #99e2d0;
+}
+
+.text-dark-green {
+  color: #159475;
+}
+
+.bg-dark-green {
+  background-color: #159475;
+}
+
+.text-dark-grey {
+  color: #353535;
+}
+
+.bg-dark-grey {
+  background-color: #353535;
+}
+
+.btn-primary {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.btn-secondary {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.btn-gradient {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.btn-grey {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.btn-light-grey {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.btn-white {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.btn-green {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.btn-dark-green {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.btn-dark-grey {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+}/*# sourceMappingURL=styles.css.map */
