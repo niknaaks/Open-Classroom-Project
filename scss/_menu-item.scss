@@ -1,60 +1,53 @@
-// @each $flex-direction in $flex-directions {
-//     .flex-#{$flex-direction} {
-//     flex-direction: #{$flex-direction};
-//     }
-// }
+@mixin align-items ($align-item) {
+    display: flex;
+    align-items: $align-item;
+}
+
+@mixin display-flex ($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin menu-item-border {
+    border-radius: $border-radius;
+    padding: 10px;
+} 
 
 
-// @mixin card-sm() {
-//     display: flex;
-//     width: 100%;
-//     border-radius: 10px;
-//     font-family: sans-serif;
-//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12);
-// }
-
-
-// @each $key, $val in $colours {
-//     .card-sm-#{$key} {
-//         @include card-sm();
-//     }
-
-//     .card-sm-padding-#{$key} {
-//         @include card-sm();
-//     }
+.primary-container {
+    .card-menu {
+        
+        @include menu-item-border();
     
-// }
+           &:hover {
+            background-color: lighten($primary, 35%);
+           }
+    }
+}
 
-
-
-// .card-sm {
-//     font-family: $primary-font;
-// }
-
-// .card-sm {
-//     display: flex;
-//     width: 100%;
+.secondary-container {
+    .card-menu {
+        @include menu-item-border();
     
+           &:hover {
+            background-color: lighten($primary, 35%);
+           }
 
-//     &__body {
-//         flex-direction: column;
-//     }
+           .card-menu__body {
+            @include display-flex(row);
+            @include align-items(center);
+           }
 
-// }
+    }
+}
 
-// .card-sm--grey__body{
-//     display: flex;
-//     text-align: center;
-//     align-items: center;
-//     width: 100%;
-//     background-color: red;
-// }
+.card-menu__text {
+    &--row {
+        @include display-flex(row);
+       }
 
-// .card-sm--light {
-// display: flex;
+    &--light {
+        margin-left: auto;
+    }
 
-// }
-
-// .card-sm__text-light {
-//     display: flex;
-// }
+}
