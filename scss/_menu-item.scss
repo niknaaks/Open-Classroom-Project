@@ -1,53 +1,66 @@
-@mixin align-items ($align-item) {
-    display: flex;
-    align-items: $align-item;
-}
 
-@mixin display-flex ($direction) {
-    display: flex;
-    flex-direction: $direction;
-}
-
-@mixin menu-item-border {
-    border-radius: $border-radius;
-    padding: 10px;
-} 
-
+// This is card on home page
 
 .primary-container {
     .card-menu {
-        
-        @include menu-item-border();
+        @include border();
     
            &:hover {
             background-color: lighten($primary, 35%);
            }
+
+            &__body {
+            @include display-flex(row);
+            @include align-items(center);
+            padding: 10px;
+            gap: $gap-30;
+
+            &-number  {
+                @include circle-item;
+                @include align-items(center);
+                justify-content: center;
+                margin-left: $margin-left-card;
+            
+            }
+
+    }
     }
 }
+
+//This is secondary card on menu page
 
 .secondary-container {
     .card-menu {
-        @include menu-item-border();
-    
-           &:hover {
-            background-color: lighten($primary, 35%);
-           }
+        @include border;
 
            .card-menu__body {
-            @include display-flex(row);
-            @include align-items(center);
+            @include display-flex(column);
+            @include font-style;
+            padding: 15px
            }
 
+            &__text {
+
+                p {
+                    @include font-style;
+                    padding: 2px
+                }
+                
+                &--row {
+                    @include display-flex(row);
+                }
+
+                &--bold {
+                    margin-left: auto;
+                }
+
+            }
+           
+
+        
+        }
+        
     }
-}
 
-.card-menu__text {
-    &--row {
-        @include display-flex(row);
-       }
 
-    &--light {
-        margin-left: auto;
-    }
 
-}

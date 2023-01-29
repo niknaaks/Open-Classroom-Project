@@ -1,3 +1,45 @@
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: $font;
 }
+
+// Function to keep some headers bold/light
+
+@function headings ($from:1, $to:6) {
+    @if $from == $to {
+        @return 'h#{$from}';
+    } @else {
+        @return 'h#{$from},' + headings($from+1, $to);
+    }
+    }
+
+    #{headings(4,6)} {
+        font-weight: 300;
+      }
+
+//Text in p tag bold/light
+
+@each $key, $val in $font-weight {
+    .font-#{$key} {
+        font-weight: $val;
+    }
+};
+
+.card-menu__text  {
+    p {
+        font-size: $font-size-big;    
+    }
+
+    &--row {
+        p {
+            font-size: $font-size-small;
+        }
+    }
+}
+
+.card-menu__body {
+    font-size: $font-size-big;
+}
+
+
+
+

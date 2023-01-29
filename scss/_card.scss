@@ -1,37 +1,88 @@
-body {
-  padding: 0;
-  margin-right: 0;
+@mixin border-card ($radius:20px){
+  border-radius: $radius;
+  box-shadow: $box-shadow;
 }
 
+// @mixin display-flex ($direction) {
+//   display: flex;
+//   flex-direction: $direction;
+// }
+
+@mixin card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+.container {
+  padding: $padding-container;
+}
+    
 a {
   text-decoration: none;
   color: black;
 }
 
 
-.card__img img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-
-
 .card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  border-radius: $border-radius;
-  border: $border-card;
+  position: relative;
   overflow: hidden;
+  @include display-flex(column);
+  @include border-card ();
+  min-width: $min-width-card;
 
-  &__img {
-    width: 100%;
-    max-height: 100%;
-    height: 150px;
-    
+   &__new {
+    position: absolute;
+   @include display-flex(row);
+    top: 20px;
+    right: 10px;
+    width: 120px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    @include border-card ($radius:5px);
+  
+   }
+
+   &__body {  
+    padding: 15px 20px; 
+
+    h3 {
+      padding: 2px;
+      margin: 0px;
+    }
+
+   }
+
+   &__img {
+    height: $height-card-img;
   }
 
-  &__body {
-    padding: 5px;
-  }
+    img {
+      @include card-img;
+    }
+   
 }
+
+
+.card-heart-container { 
+    .card-heart {
+      position: absolute;
+      font-size: 35px;
+    }
+
+    .card-heart--hover {
+      color: transparent;
+       :hover {
+         background-image: -webkit-linear-gradient(#9356DC, #FF79DA);
+         -webkit-background-clip: text;
+         background-clip: text;
+          }
+   }
+
+
+}
+
+
+
+

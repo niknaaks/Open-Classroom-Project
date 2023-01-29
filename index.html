@@ -9,94 +9,127 @@
   <link href="./css/styles.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/8a259c5c86.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-grey">
+<body>
 
-  <div class="primary-container">
-    <div class="card-menu bg-white">
-      <div class="card-menu__body">
-        <div class="card-menu__text">
-          <h5>Escargot</h5>
-        </div>
+  <div class="container">
 
+    <!-- This is main page button  -->
 
-        <div class="card-menu__text--row">
+    <h3>Book the menu you like</h3>
 
-          <div class="card-menu__text--bold">
-            <h5>With Southern French spices</h5>
-          </div>
+    <h4>Discover top-of-the-art restaurants we pick for you</h4>
 
-
-          <div class="card-menu__text--light">
-            <h5> 25€</h5>
-          </div>
-
-        </div>
-      </div>
-
+    <div class="btn btn-primary">
+      <h3>Explore our resturants</h3>
 
     </div>
-  </div>
 
-  <div class="secondary-container">
-    <div class="card-menu bg-light-grey">
-      <div class="card-menu__body">
-        <div class="card-menu__body-number">
-          <h5>1</h5>
+
+    <!-- This is the main menu container -->
+
+    <div class="primary-container">
+      <div class="card-menu bg-light-grey">
+        <div class="card-menu__body">
+          <div class="card-menu__body-number text-white">
+            <p>1
+            <p>
+          </div>
+          <div class="card-menu__body-icon text-grey-medium">
+            <i class="fa-solid fa-mobile"></i>
+          </div>
+          <div class="card-menu__body-text font-bold">
+            <p>Chose a restaurant</p>
+          </div>
         </div>
-        <div class="card__menu__body-icon">
-          <i class="fa-solid fa-mobile"></i>
-        </div>
-        <div class="card__menu__body-text">
-          <h5>Chose a resturant</h5>
-        </div>
+
       </div>
-
     </div>
-  </div>
+
+    <!-- This is secondary container for main menu items -->
+
+    <div class="secondary-container">
+      <div class="card-menu bg-white">
+        <div class="card-menu__body">
+          <div class="card-menu__text font-bold">
+            <p>Escargot</p>
+          </div>
+          <div class="card-menu__text--row font-light">
+
+            <div class="card-menu__text">
+              <p>With Southern French spices</p>
+            </div>
+
+            <div class=" card-menu__text card-menu__text--bold font-bold">
+              <p> 25€</p>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
 
 
 
+    <!-- <button class="btn btn--primary">Hello</button> -->
 
-  <button class="btn btn--primary">Hello</button>
-
-  <!-- <nav class="logo">
+    <!-- <nav class="logo">
     <div class="logo--large">
       <img src="../sass/images/logo/ohmyfood.png" alt="Ohmyfood logo">
     </div>
   </nav> -->
 
-  <div class="card-container">
-    <a href="#" class="card">
+    <!-- This is Restaurants cards  -->
 
-      <div class="card__btn">
-        <button type="button" class="bg-green text-dark-green">New</button>
+    <div class="card-container">
+      <a href="#" class="card bg-white">
 
-      </div>
+        <div class="card__new bg-green text-dark-green font-bold">
+          <p>New</p>
+        </div>
 
-      <div class="card__img">
-        <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="The Full Palette, New York">
-      </div>
+        <div class="card__img">
+          <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="The Full Palette, New York">
+        </div>
 
-      <div class="card__body">
-        <h3 class="card__text">The Full Palette</h3>
-        <h3 class="card__text--light">New York</h3>
-      </div>
-    </a>
+        <div class="card__body">
+          <h3 class="card__text">The Full Palette</h3>
+          <h3 class="card__text font-light">New York</h3>
+
+          <!-- This is the heart icon -->
+          <div class="card-heart-container">
+            <div class="card-heart card-heart-bg">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="card-heart card-heart--hover">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </a>
+    </div>
+
+
+    <div class="btn btn-primary">
+      <h3>Order</h3>
+    </div>
+
+
+
+
+
   </div>
 
-  <div class="btn btn-primary">
-    <h3>Order</h3>
-  </div>
-
-  <div class="btn btn-primary">
-    <h3>Explore our resturants</h3>
-
-  </div>
 
 </body>
 
