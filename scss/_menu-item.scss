@@ -1,7 +1,30 @@
 
+// .container {
+//     padding: 30px;
+// }
+
 // This is card on home page
 
+.menu-title {
+    padding: $padding-title;
+}
+
+.card-menu-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .primary-container {
+
+
+    .card-menu-text {
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+    }
+
+
     .card-menu {
         @include border();
     
@@ -20,7 +43,7 @@
                 @include align-items(center);
                 justify-content: center;
                 margin-left: $margin-left-card;
-            
+                font-size: $font-size-sm;
             }
 
     }

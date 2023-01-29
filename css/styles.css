@@ -1,3 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 15px;
+}
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.header__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.header__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+}
+
 .container {
   padding: 5px;
 }
@@ -8,6 +41,7 @@ a {
 }
 
 .card {
+  box-sizing: border-box;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -30,7 +64,11 @@ a {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 8px 0px;
 }
 .card__body {
+  max-width: 100%;
   padding: 15px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .card__body h3 {
   padding: 2px;
@@ -45,14 +83,14 @@ a {
   object-fit: cover;
 }
 
-.card-heart-container .card-heart {
+.heart-container .heart {
   position: absolute;
   font-size: 35px;
 }
-.card-heart-container .card-heart--hover {
+.heart-container .heart--hover {
   color: transparent;
 }
-.card-heart-container .card-heart--hover :hover {
+.heart-container .heart--hover :hover {
   background-image: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
@@ -92,6 +130,14 @@ a {
 
 .bg-grey {
   background-color: #D3D3D3;
+}
+
+.text-grey-medium-1 {
+  color: #eaeaea;
+}
+
+.bg-grey-medium-1 {
+  background-color: #eaeaea;
 }
 
 .text-grey-medium {
@@ -142,6 +188,21 @@ a {
   background-color: #353535;
 }
 
+.menu-title {
+  padding: 20px 20px 1px 20px;
+}
+
+.card-menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-container .card-menu-text {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
 .primary-container .card-menu {
   border-radius: 20px;
   padding: 3px;
@@ -168,6 +229,7 @@ a {
   align-items: center;
   justify-content: center;
   margin-left: -25px;
+  font-size: 15px;
 }
 
 .secondary-container .card-menu {
@@ -204,7 +266,7 @@ a {
   padding: 2px;
   margin: 10px;
   max-width: 300px;
-  min-width: 200px;
+  min-width: 250px;
 }
 
 .btn-secondary {
@@ -215,7 +277,7 @@ a {
   padding: 2px;
   margin: 10px;
   max-width: 300px;
-  min-width: 200px;
+  min-width: 250px;
 }
 
 .btn-tertiary gradient {
@@ -226,7 +288,7 @@ a {
   padding: 2px;
   margin: 10px;
   max-width: 300px;
-  min-width: 200px;
+  min-width: 250px;
 }
 
 .btn-grey {
@@ -237,7 +299,18 @@ a {
   padding: 2px;
   margin: 10px;
   max-width: 300px;
-  min-width: 200px;
+  min-width: 250px;
+}
+
+.btn-grey-medium-1 {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  padding: 2px;
+  margin: 10px;
+  max-width: 300px;
+  min-width: 250px;
 }
 
 .btn-grey-medium {
@@ -248,7 +321,7 @@ a {
   padding: 2px;
   margin: 10px;
   max-width: 300px;
-  min-width: 200px;
+  min-width: 250px;
 }
 
 .btn-light-grey {
@@ -259,7 +332,7 @@ a {
   padding: 2px;
   margin: 10px;
   max-width: 300px;
-  min-width: 200px;
+  min-width: 250px;
 }
 
 .btn-white {
@@ -270,7 +343,7 @@ a {
   padding: 2px;
   margin: 10px;
   max-width: 300px;
-  min-width: 200px;
+  min-width: 250px;
 }
 
 .btn-green {
@@ -281,7 +354,7 @@ a {
   padding: 2px;
   margin: 10px;
   max-width: 300px;
-  min-width: 200px;
+  min-width: 250px;
 }
 
 .btn-dark-green {
@@ -292,7 +365,7 @@ a {
   padding: 2px;
   margin: 10px;
   max-width: 300px;
-  min-width: 200px;
+  min-width: 250px;
 }
 
 .btn-dark-grey {
@@ -303,7 +376,7 @@ a {
   padding: 2px;
   margin: 10px;
   max-width: 300px;
-  min-width: 200px;
+  min-width: 250px;
 }
 
 body {
@@ -331,6 +404,20 @@ h4, h5, h6 {
 
 .card-menu__body {
   font-size: 20px;
+}
+
+.text-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.logo-sm img {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: white;
+  background-color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

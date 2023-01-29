@@ -22,6 +22,15 @@ $gap-30: 30px;
 $height-card-img: 200px;
 $min-width-card: 300px;
 $padding-container:5px;
+$gap-10: 10px;
+$gap-20:20px;
+$padding-15:15px;
+$padding-30:30px;
+$font-size-sm:15px;
+$padding-title: 20px 20px 1px 20px;
+
+//height
+$logo-height: 30px;
 
 
 //card 
@@ -48,6 +57,7 @@ $colours: (
     "tertiary"
     "gradient": $gradient,
     "grey": #D3D3D3,
+    "grey-medium-1": #eaeaea,
     "grey-medium": #666666, 
     "light-grey": #f6f6f6,
     "white":#fff,

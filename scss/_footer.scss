@@ -1,0 +1,14 @@
+.text-footer {
+    @include display-flex (column); 
+    gap: $gap-10;
+    padding: 20px;
+}
+
+.logo-sm img {
+    
+-webkit-background-clip: text;
+background-clip: text;
+color: white;
+background-color: white;
+
+}

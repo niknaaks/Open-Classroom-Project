@@ -8,6 +8,12 @@
     flex-direction: $direction;
 }
 
+@mixin content-center () {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @mixin border ($radius:20px, $border-padding:3px, $border-margin:15px){
     border-radius: ($radius);
     padding: $border-padding;
