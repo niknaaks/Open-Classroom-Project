@@ -40,6 +40,10 @@ a {
   color: black;
 }
 
+.card-container {
+  padding: 7px;
+}
+
 .card {
   box-sizing: border-box;
   position: relative;
@@ -64,7 +68,6 @@ a {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 8px 0px;
 }
 .card__body {
-  max-width: 100%;
   padding: 15px 20px;
   display: flex;
   flex-direction: row;
@@ -84,8 +87,9 @@ a {
 }
 
 .heart-container .heart {
+  margin-left: -30px;
   position: absolute;
-  font-size: 35px;
+  font-size: 30px;
 }
 .heart-container .heart--hover {
   color: transparent;
