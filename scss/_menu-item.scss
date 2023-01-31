@@ -1,8 +1,4 @@
 
-// .container {
-//     padding: 30px;
-// }
-
 // This is card on home page
 
 .menu-title {
@@ -15,7 +11,6 @@
 }
 
 .primary-container {
-
 
     .card-menu-text {
         padding: 10px 20px;
@@ -54,29 +49,53 @@
 
 .secondary-container {
     .card-menu {
-        @include border;
+
+        cursor: pointer;
+        overflow: hidden;
+
+
+        &__input {
+            display: none
+        }
+
+        &__label {
+            @include display-flex(row);
+           
+        }
+
+        @include border($border-padding:0px);
 
            .card-menu__body {
             @include display-flex(column);
             @include font-style;
+            flex-grow: 1;
             padding: 15px
            }
 
+
             &__text {
 
-                p {
-                    @include font-style;
-                    padding: 2px
-                }
-                
-                &--row {
-                    @include display-flex(row);
-                }
+               text-overflow: ellipsis;
+               overflow: hidden;
+               white-space: nowrap;
+               display: block;
+               
 
                 &--bold {
-                    margin-left: auto;
+                    display: flex;
+                    align-items: center;
                 }
 
+            }
+
+            &__checked {
+                width: 0;
+                overflow: hidden;
+                transition: width 2s;
+                background-color: $tertiary;
+                @include content-center;
+                
+               
             }
            
 
@@ -85,5 +104,72 @@
         
     }
 
+    .card-menu {
+
+        :hover {
+
+            &__input {
+
+                &__label {
+
+                    &__checked {
+                        width: 90px;
+                        
+                        @include content-center;
+                        background-color: $tertiary;
+                        overflow: hidden;
+                        transition: transform 2s;
+                        transform: rotate(360deg);
+                    }
+
+                }
+
+            }
+
+            
+        }
+    }
+
+    .card-menu__checked {
+        width: 70px;
+        @include content-center;
+        background-color: $tertiary;
+        // overflow: hidden;
+        transition: transform 2s;
+        transform: rotate(360deg);
+    }
 
 
+
+    // .card-menu__input:checked + label .card-menu__checked {
+    //     width: 70px;
+    //     transform: rotate(1turn);
+    
+    // }
+
+
+
+
+.card-menu  {
+    &:hover {
+        &__input {
+
+            
+            label {
+                
+                &__checked{
+                    width: 70px;
+                    background-color: red;
+        
+                    &--icon {
+                        -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg);
+                    }
+            }   
+        }
+        
+        }
+       
+
+    }
+}

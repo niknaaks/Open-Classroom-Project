@@ -6,18 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OhMyFood</title>
-  <link href="./css/styles.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
   <script src="https://kit.fontawesome.com/8a259c5c86.js" crossorigin="anonymous"></script>
+  <link href="./css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-
-
 
   <!-- This is the header -->
 
@@ -54,9 +51,6 @@
 
 
   </header>
-
-
-
 
   <!-- This is the main menu container -->
 
@@ -272,33 +266,50 @@
 
     <div class="secondary-container">
       <div class="card-menu bg-white">
-        <div class="card-menu__body">
-          <div class="card-menu__text font-bold">
-            <p>Escargot</p>
-          </div>
-          <div class="card-menu__text--row font-light">
+        <input class="card-menu__input" type="checkbox" name="menu-checkbox" id="menu-item-1">
+        <label for="menu-item-1" class="card-menu__label">
 
-            <div class="card-menu__text">
-              <p>With Southern French spices</p>
-            </div>
+          <span class="card-menu__body">
 
-            <div class=" card-menu__text card-menu__text--bold font-bold">
-              <p> 25€</p>
-            </div>
+            <span class="card-menu__text">
+              <strong>
+                Escargot
+              </strong>
 
-          </div>
-        </div>
+            </span>
+
+            <span class="card-menu__text">
+              With Southern French spices
+            </span>
+
+          </span>
+
+          <span class="card-menu__text card-menu__text--bold"><strong>
+              25€
+            </strong>
+          </span>
 
 
+          <span class="card-menu__checked">
+            <i class="fa-solid fa-circle-check card-menu__checked--icon"></i>
+          </span>
+
+        </label>
       </div>
-    </div>
 
 
-    <div class="btn btn-primary">
-      <h3>Order</h3>
+
+
+
     </div>
 
   </div>
+
+
+  <div class="btn btn-primary">
+    <h3>Order</h3>
+  </div>
+
 
 
 </body>

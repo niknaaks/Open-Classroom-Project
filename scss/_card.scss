@@ -77,6 +77,7 @@ a {
     .heart--hover {
       color: transparent;
        :hover {
+        transition:all 2s ease;
          background-image: -webkit-linear-gradient(#9356DC, #FF79DA);
          -webkit-background-clip: text;
          background-clip: text;
