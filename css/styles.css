@@ -193,6 +193,36 @@ a {
   background-color: #353535;
 }
 
+.menu-item__img {
+  height: 200px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-item__container {
+  border-radius: 20px;
+  border: solid 5px transparent;
+  margin-top: -15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.menu-item__container .menu-item__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-item__container .heart-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .menu-title {
   padding: 20px 20px 1px 20px;
 }
@@ -237,12 +267,17 @@ a {
   font-size: 15px;
 }
 
+.secondary-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 .secondary-container .card-menu {
   cursor: pointer;
   overflow: hidden;
   border-radius: 20px;
   padding: 0px;
-  margin: 15px;
+  margin: 0px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 8px 0px;
 }
 .secondary-container .card-menu__input {
@@ -260,15 +295,17 @@ a {
   flex-grow: 1;
   padding: 15px;
 }
+.secondary-container .card-menu__title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .secondary-container .card-menu__text {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  display: block;
-}
-.secondary-container .card-menu__text--bold {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 .secondary-container .card-menu__checked {
   width: 0;
@@ -280,34 +317,41 @@ a {
   justify-content: center;
 }
 
-.card-menu :hover__input__label__checked {
-  width: 90px;
+.card-menu :hover {
+  cursor: pointer;
+}
+.card-menu :hover .card-menu__checked {
+  width: 70px;
+}
+.card-menu :hover .card-menu__checked--icon {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.card-menu__checked--icon {
+  width: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #99E2D0;
   overflow: hidden;
-  transition: transform 2s;
-  transform: rotate(360deg);
+  transition: width 1s;
 }
 
-.card-menu__checked {
+.card-menu__input:checked + label .card-menu__checked {
   width: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #99E2D0;
-  transition: transform 2s;
-  transform: rotate(360deg);
 }
 
-.card-menu:hover__input label__checked {
-  width: 70px;
-  background-color: red;
+.card-menu__checked--icon {
+  transform: rotate(360deg);
+  transform: transform 1s;
+  color: white;
 }
-.card-menu:hover__input label__checked--icon {
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
+
+.card-header__border {
+  border-bottom: 4px solid #99E2D0;
+  width: 50px;
+  padding-bottom: 8px;
 }
 
 .btn-primary {
@@ -462,18 +506,25 @@ h4, h5, h6 {
   font-size: 20px;
 }
 
-.text-footer {
+.font-style {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.2rem;
+}
+
+.menu-item-lg {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.7rem;
+}
+
+.font-size-sm {
+  font-size: 1.1rem;
+}
+
+.footer__text {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 20px;
-}
-
-.logo-sm img {
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: white;
-  background-color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

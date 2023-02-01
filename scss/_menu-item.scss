@@ -1,5 +1,41 @@
+// This is header on menu items page
 
-// This is card on home page
+.menu-item__img {
+        height: $height-card-img;
+        
+     
+        
+      }
+    
+        img {
+          @include card-img;
+        } 
+
+
+// This is the title on menu items 
+
+.menu-item__container {
+    border-radius: $border-radius;
+    border: $border-card;
+    margin-top: $padding-top;
+    position: relative;
+    @include display-flex(column);
+    padding: $padding-15;
+
+    .menu-item__title {
+     @include display-flex(row);
+    justify-content: space-between;
+
+    }
+ 
+    .heart-container {
+        @include display-flex(row);
+        align-items: center;
+    }
+}
+
+
+// This is item cards on home page
 
 .menu-title {
     padding: $padding-title;
@@ -45,9 +81,11 @@
     }
 }
 
-//This is secondary card on menu page
+//This is menu items card on menu page
 
 .secondary-container {
+    @include display-flex(column);
+    gap:$gap-15;
     .card-menu {
 
         cursor: pointer;
@@ -63,7 +101,7 @@
            
         }
 
-        @include border($border-padding:0px);
+        @include border($border-padding:0px, $border-margin:0px);
 
            .card-menu__body {
             @include display-flex(column);
@@ -72,19 +110,22 @@
             padding: 15px
            }
 
+           &__title {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+           }
+
 
             &__text {
 
                text-overflow: ellipsis;
                overflow: hidden;
                white-space: nowrap;
-               display: block;
+               display: flex;
+               justify-content: space-between;
                
 
-                &--bold {
-                    display: flex;
-                    align-items: center;
-                }
 
             }
 
@@ -107,69 +148,52 @@
     .card-menu {
 
         :hover {
+        cursor: pointer;
 
-            &__input {
+        .card-menu__checked {
+            width: 70px;
+        }
 
-                &__label {
-
-                    &__checked {
-                        width: 90px;
-                        
-                        @include content-center;
-                        background-color: $tertiary;
-                        overflow: hidden;
-                        transition: transform 2s;
-                        transform: rotate(360deg);
-                    }
-
-                }
-
-            }
-
+        .card-menu__checked--icon {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
             
         }
     }
 
-    .card-menu__checked {
-        width: 70px;
+    .card-menu__checked--icon {
+        width: 75px;
         @include content-center;
         background-color: $tertiary;
-        // overflow: hidden;
-        transition: transform 2s;
-        transform: rotate(360deg);
+        overflow: hidden;
+        transition: width 1s;
     }
 
 
-
-    // .card-menu__input:checked + label .card-menu__checked {
-    //     width: 70px;
-    //     transform: rotate(1turn);
-    
-    // }
-
-
-
-
-.card-menu  {
-    &:hover {
-        &__input {
-
-            
-            label {
-                
-                &__checked{
-                    width: 70px;
-                    background-color: red;
-        
-                    &--icon {
-                        -webkit-transform: rotate(0deg);
-                        transform: rotate(0deg);
-                    }
-            }   
-        }
-        
-        }
-       
-
+    .card-menu__input:checked + label .card-menu__checked {
+        width: 70px;
+        // transform: rotate(1turn);
     }
+
+
+.card-menu__checked--icon {
+    transform: rotate(360deg);
+    transform: transform 1s;
+    color: white;
 }
+
+
+.card-header {
+        &__border {
+            border-bottom: 4px solid $tertiary;
+            width: 50px;
+            padding-bottom: 8px;
+        }
+    
+}
+
+
+
+
+
