@@ -18,6 +18,11 @@
   }
 }
 
+.btn-container {
+  @include content-center;
+  padding: $padding-80;
+}
+
 .btn {
   box-shadow:$box-shadow;
 }
