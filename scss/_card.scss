@@ -74,10 +74,13 @@ a {
       margin-left: -30px;
       position: absolute;
       font-size: 30px;
+      
     }
 
     .heart--hover {
       color: transparent;
+      
+      
        :hover {
         transition:all 2s ease;
          background-image: -webkit-linear-gradient(#9356DC, #FF79DA);

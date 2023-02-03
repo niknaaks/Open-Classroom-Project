@@ -18,6 +18,7 @@ body {
     }
     
     &__logo {
+        @include display-flex(row);
         width: 180px;
         height: 100%;
         padding: 15px
@@ -35,6 +36,18 @@ body {
 
 }
 
+.menu-header__logo {
+    @include display-flex(row);
+    justify-content: center;
+    width: 100%;
+
+    & img {
+        width: 200px;
+    }
+
+}
+
+
 // The is header on homepage 
 .header {
 
@@ -51,5 +64,9 @@ body {
        
     }
     
+}
+
+.header__border {
+    border-top: 2px grey solid;
 }
 

@@ -18,9 +18,21 @@ body {
   top: 20px;
 }
 .menu-header__logo {
+  display: flex;
+  flex-direction: row;
   width: 180px;
   height: 100%;
   padding: 15px;
+}
+
+.menu-header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.menu-header__logo img {
+  width: 200px;
 }
 
 .header__icon {
@@ -37,6 +49,10 @@ body {
   flex-direction: column;
   text-align: center;
   padding: 30px;
+}
+
+.header__border {
+  border-top: 2px grey solid;
 }
 
 .container {
@@ -508,8 +524,12 @@ h4, h5, h6 {
   font-weight: 700;
 }
 
+.font-normal {
+  font-weight: 500;
+}
+
 .font-light {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .card-menu__text p {
