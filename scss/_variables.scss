@@ -17,25 +17,40 @@ $gradient: linear-gradient(to top, #9356DC 50%, #FF79DA 50%);
 // utilities
 $border-radius: 20px;
 $border-card: solid 5px transparent;
+$border-radius-50: 50px;
 $height-25: 25px;
 $width-25: 25px;
-$margin-left-card: -25px;
-$gap-30: 30px;
+
+
 $height-card-img: 200px;
 $height-card-img-lg:400px;
 $min-width-card: 300px;
-$padding-container:5px;
+
+//gap 
 $gap-10: 10px;
 $gap-15: 15px;
 $gap-20:20px;
+$gap-30: 30px;
+
+//margin
+$margin-left-card: -25px;
+$margin-10: 10px;
+
+//padding 
+$padding-2: 2px;
 $padding-15:15px;
 $padding-80: 80px;
 $padding-30:30px;
-$font-size-sm:15px;
-$padding-title: 20px 20px 1px 20px;
-$logo-height: 30px;
 $padding-top:-15px;
+$padding-container:5px;
+$padding-title: 20px 20px 1px 20px;
 
+// btn width
+$max-width-btn: 300px;
+$min-width-btn:250px;
+
+// height
+$logo-height: 30px;
 
 //box-shadow
 $box-shadow:rgba(0, 0, 0, 0.12) 0px 4px 8px 0px;
@@ -43,6 +58,7 @@ $box-shadow:rgba(0, 0, 0, 0.12) 0px 4px 8px 0px;
 
 //font 
 $primary-font: "Roboto", 'sans-serif';
+$font-size-sm:15px;
 
 
 // colors 

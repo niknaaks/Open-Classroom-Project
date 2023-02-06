@@ -15,7 +15,7 @@
 // This is the title on menu items 
 
 .menu-item__container {
-    border-radius: 30px;
+    border-radius: 30px 30px 0px 0px;
     border: $border-card;
     margin-top: $padding-top;
     position: relative;
@@ -89,7 +89,13 @@
 .secondary-container {
     @include display-flex(column);
     gap:$gap-15;
-    padding: 8px 0;
+    padding: 10px 0;
+    
+    .card-header {
+        padding: 10px 0;
+    }
+
+
     .card-menu {
 
         cursor: pointer;
@@ -105,13 +111,13 @@
            
         }
 
-        @include border($border-padding:0px, $border-margin:0px);
+        @include border($radius: 20px,$border-padding:0px, $border-margin:0px);
 
            .card-menu__body {
             @include display-flex(column);
             @include font-style;
             flex-grow: 1;
-            padding: 15px
+            padding: $padding-15;
            }
 
            &__title {
@@ -129,6 +135,7 @@
                display: flex;
                justify-content: space-between;
                
+               
 
 
             }
@@ -136,15 +143,13 @@
             &__checked {
                 width: 0;
                 overflow: hidden;
-                transition: width 2s;
+                transition: width 1s;
                 background-color: $tertiary;
                 @include content-center;
-                
-               
-            }
-           
+                font-size: $font-size-big;
 
-        
+                
+            }
         }
         
     }
@@ -159,33 +164,24 @@
         }
 
         .card-menu__checked--icon {
-            -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+            -webkit-transform: icon rotate(360deg);
+            transform: rotate(360deg);
         }
             
         }
     }
 
+
     .card-menu__checked--icon {
-        width: 75px;
-        @include content-center;
-        background-color: $tertiary;
-        overflow: hidden;
-        transition: width 1s;
-    }
+    transition: all 1s;
+    transform: transform 1s;
+    color: white;
+}
 
 
     .card-menu__input:checked + label .card-menu__checked {
         width: 70px;
-        // transform: rotate(1turn);
     }
-
-
-.card-menu__checked--icon {
-    transform: rotate(360deg);
-    transform: transform 1s;
-    color: white;
-}
 
 
 .card-header {
@@ -193,43 +189,54 @@
             border-bottom: 4px solid $tertiary;
             width: 50px;
             margin-top: -8px;
-            
         }
     
 }
 
-//This is for the fade in menu items 
+//This is the fade in animation 
 
-// .secondary-container {
+.secondary-container .card-menu {
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    // animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    
+   
+}
 
-//     .card-menu:nth-child(4) {
-//         animation-duration: 1s;
-//         animation-name: menu-item;
-//         animation-timing-function: ease-in-out;
-//         animation-delay: 3s;
-//     }
+.fade-1 {
+    animation-delay: 0.3s;
+   
+}
 
-//     .card-menu:nth-child(3) {
-//         animation-duration: 1s;
-//         animation-name: menu-item;
-//         animation-timing-function: ease-in-out;
-//         animation-delay: 1s;
-//     }
+.fade-2 {
+    animation-delay: 0.5s;
+ 
+}
 
-//     .card-menu:nth-child(2) {
-//         animation-duration: 1s;
-//         animation-name: menu-item;
-//         animation-timing-function: ease-in-out;
-        
-//     }
+.fade-3 {
+    animation-delay: 0.8s;
 
-// }
+}
 
 
-// @keyframes menu-item {
-//     0% {opacity: 0;}
-//     100% {opacity: 1;}
-// }
+
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(0%);
+        opacity: 0;
+
+    }
+
+
+
+    100% {
+        transform: translateY(-10%);
+        opacity: 1;
+    }
+}
+
 
 
 

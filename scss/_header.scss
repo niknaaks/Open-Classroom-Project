@@ -3,6 +3,10 @@ body {
     padding: 0;
 }
 
+.header .menu-header__border {
+    box-shadow: rgba(0, 0, 0, 0.12) 20px 20px 10px 20px;
+}
+
 .menu-header {
     position: absolute;
     background-color: white;

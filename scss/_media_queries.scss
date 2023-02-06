@@ -1,0 +1,39 @@
+@media screen and (max-width: 992px) {
+    .lg-container {
+        max-width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .menu-header {
+        min-width: 800px;
+    }
+
+    .menu-item__img  img {
+        box-shadow: 0 0 8px 8px white inset;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .lg-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .menu-item__container {
+            min-width: 800px;
+        }
+    
+        .menu-item__img  img {
+            box-shadow: 0 0 8px 8px white inset;
+        }
+
+    }
+
+    
+
+
+   
+}
