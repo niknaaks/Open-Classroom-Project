@@ -11,12 +11,6 @@
 }
 
 
-@each $key, $val in $colours {
-  .btn-#{$key} {
-    @include primary-btn();
-    
-  }
-}
 
 .btn-container {
   @include content-center;
@@ -25,10 +19,12 @@
 
 .btn {
   box-shadow:$box-shadow;
+  @include primary-btn();
 
   &:hover {
     box-shadow: $box-shadow-hover;
-    background: rgba($color: #9356DC, $alpha: 6.0);
-}
+    opacity: 0.9;
+    transition: 1s;
+  }
 
 }
