@@ -3,6 +3,12 @@ a {
   color: black;
 }
 
+.card {
+  &:hover {
+    box-shadow: $box-shadow-hover;
+  }
+}
+
 .cards {
   display: flex;
   flex-direction: column;

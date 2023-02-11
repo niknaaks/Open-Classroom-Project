@@ -70,13 +70,6 @@
             background-color: lighten($primary, 35%);
            }
 
-            &__body-icon {
-                &:hover {
-                    color: $secondary;
-            }
-
-           }
-
             &__body {
             @include display-flex(row);
             @include align-items(center);
@@ -95,6 +88,7 @@
     }
     }
 }
+
 
 //This is menu items card on menu page
 

@@ -125,6 +125,10 @@ a {
   color: black;
 }
 
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 8px 0px;
+}
+
 .cards {
   display: flex;
   flex-direction: column;
@@ -341,9 +345,6 @@ img {
 }
 .primary-container .card-menu:hover {
   background-color: #f2eafb;
-}
-.primary-container .card-menu__body-icon:hover {
-  color: #FF79DA;
 }
 .primary-container .card-menu__body {
   display: flex;
@@ -606,6 +607,9 @@ img {
 .btn {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 8px 0px;
 }
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 8px 0px;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -654,11 +658,21 @@ h4, h5, h6 {
   font-size: 1.1rem;
 }
 
-.footer__text {
+.footer__text :hover {
+  color: #9356DC;
+}
+
+.footer__logo {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 20px;
+}
+
+.footer__icon {
+  width: 5px;
+  height: 5px;
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
