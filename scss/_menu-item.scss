@@ -70,11 +70,19 @@
             background-color: lighten($primary, 35%);
            }
 
+            &__body-icon {
+                &:hover {
+                    color: $secondary;
+            }
+
+           }
+
             &__body {
             @include display-flex(row);
             @include align-items(center);
             padding: 10px;
             gap: $gap-30;
+
 
             &-number  {
                 @include circle-item;

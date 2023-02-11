@@ -3,6 +3,11 @@ a {
   color: black;
 }
 
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-30;
+}
 
 .card {
   box-sizing: border-box;
@@ -48,7 +53,6 @@ a {
     }
    
 }
-
 
 
 .heart-container { 

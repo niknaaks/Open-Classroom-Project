@@ -3,6 +3,10 @@ body {
     padding: 0;
 }
 
+.menu-header__logo {
+    box-sizing: border-box;
+}
+
 .header .menu-header__border {
     box-shadow: rgba(0, 0, 0, 0.12) 20px 20px 10px 20px;
 }
