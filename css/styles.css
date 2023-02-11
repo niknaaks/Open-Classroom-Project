@@ -609,6 +609,7 @@ img {
 }
 .btn:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 8px 0px;
+  background: #9356dc;
 }
 
 body {
