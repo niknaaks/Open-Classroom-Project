@@ -8,7 +8,6 @@
 
 
 .footer__logo {
-    @include display-flex (column); 
     gap: $gap-10;
     padding: 20px;
 }
@@ -18,4 +17,7 @@
     width: 5px;
     height: 5px;
     margin-right: 15px;
+  
 }
+
+
