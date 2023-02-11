@@ -1,3 +1,7 @@
+.container {
+    padding: $padding-30;
+}
+
 // This is header on menu items page
 
 .menu-item__img {
@@ -41,13 +45,11 @@
 
 // This is item cards on home page
 
-// .menu-title {
-//     // padding: $padding-title;
-// }
 
 .card-menu-container {
     display: flex;
     flex-direction: column;
+    gap: $gap-20;
 }
 
 .primary-container {
@@ -61,7 +63,8 @@
 
 
     .card-menu {
-        @include border();
+        @include border(20px, 0px, 0px);
+        margin-left: 5px;
     
            &:hover {
             background-color: lighten($primary, 35%);

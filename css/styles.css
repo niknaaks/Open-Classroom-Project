@@ -121,10 +121,6 @@ a {
   color: black;
 }
 
-.card-container {
-  padding: 7px;
-}
-
 .card {
   box-sizing: border-box;
   position: relative;
@@ -275,6 +271,10 @@ a {
   background-color: #353535;
 }
 
+.container {
+  padding: 30px;
+}
+
 .menu-item__img {
   height: 400px;
   object-fit: contain;
@@ -313,6 +313,7 @@ img {
 .card-menu-container {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .primary-container .card-menu-text {
@@ -323,9 +324,10 @@ img {
 }
 .primary-container .card-menu {
   border-radius: 20px;
-  padding: 3px;
-  margin: 15px;
+  padding: 0px;
+  margin: 0px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 8px 0px;
+  margin-left: 5px;
 }
 .primary-container .card-menu:hover {
   background-color: #f2eafb;
