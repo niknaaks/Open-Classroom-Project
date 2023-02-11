@@ -86,7 +86,7 @@ a {
            background-image: -webkit-linear-gradient(#9356DC, #FF79DA);
            -webkit-background-clip: text;
            background-clip: text;
-           animation: heart-animation 0.2s linear;
+           animation: heart-animation 0.8s linear;
            transform-origin: bottom;
           }
 
@@ -96,15 +96,18 @@ a {
 
 @keyframes heart-animation {
   0% {
-    transform: scale(0);
+    transform: scale(0.5);
+    opacity: 0;
+
 
   }
 
   100% {
     
     transform:scaleY(1);
-    background-image: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
+    opacity: 1;
+    // background-image: -webkit-linear-gradient(#9356DC, #FF79DA);
+    // background-clip: text;
   
   }
 }

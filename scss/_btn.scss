@@ -1,29 +1,56 @@
 
-@mixin primary-btn {
-  cursor: pointer;
-    text-align: center;
-    color: white;
-    border-radius: $border-radius-50;
-    padding: $padding-2;
-    margin: $margin-10;
-    max-width: $max-width-btn;
-    min-width: $min-width-btn;
-}
-
-
-@each $key, $val in $colours {
-  .btn-#{$key} {
-    @include primary-btn();
+// @each $key, $val in $colours {
+//   .btn-#{$key} {
+//     @include primary-btn();
     
-  }
-}
+//   }
+// }
 
 .btn-container {
   @include content-center;
-  padding: $padding-80;
+  // padding: $padding-80;
+  max-width: 180px;
+  box-shadow:$box-shadow;
+  }
+
+  
+  
+.btn-primary{
+
+  width: 100%;
+
+  :hover {
+    opacity: 0.7;
+    box-shadow:$box-shadow-dark;
+  }
 }
 
+
 .btn {
-  box-shadow:$box-shadow;
+  :hover{
+    color: red;
+    box-shadow:$box-shadow-dark;
+
+  }
+}
+
+
+.btn-real {
+  cursor: pointer;
+  border: 0px;
+  font-size: 1.2rem;
+  padding: 15px;
+  background-image: linear-gradient(to top, $primary, $secondary);
+  @include content-center;
+  color: #fff;
+  box-shadow:$box-shadow-btn;
+
+
+  :hover {
+    color: red;
+    box-shadow:$box-shadow-dark;
+
+  }
+
 }
 
