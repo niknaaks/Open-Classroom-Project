@@ -204,14 +204,16 @@
 .secondary-container .card-menu {
     animation-name: fade-in;
     animation-duration: 1.5s;
-    // animation-timing-function: ease-in;
+    animation-timing-function: linear;
     animation-fill-mode: forwards;
+    opacity: 0;
+    animation-iteration-count: 1;
     
    
 }
 
 .fade-1 {
-    animation-delay: 0.3s;
+    animation-delay: 0s;
    
 }
 
@@ -225,7 +227,10 @@
 
 }
 
+.fade-3 {
+    animation-delay: 1.2s;
 
+}
 
 
 @keyframes fade-in {
