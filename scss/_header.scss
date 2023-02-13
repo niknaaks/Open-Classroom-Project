@@ -14,12 +14,12 @@ body {
 .menu-header {
     
     background-color: white;
-    width: 100%;
+    max-width: 100%;
     @include display-flex(row);
     justify-content: center;
 
     &__arrow {
-        position: absolute;
+        position: relative;
         left: 20px;
         font-size: 1.3rem;
         top: 20px;
@@ -27,7 +27,6 @@ body {
     
     &__logo {
         @include display-flex(row);
-        width: 180px;
         height: 100%;
         padding: 15px
 

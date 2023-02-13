@@ -4,13 +4,27 @@
         max-width: 800px;
     } }
 
-    
-
+    .card-menu-lg {
+        display: flex;
+        flex-direction: column;
+        gap: $gap-20;
+    }
     
 
 
 @media screen and (min-width: 992px) {
 
+    .menu-header__arrow {
+        display: flex;
+        
+    }
+
+     .card-menu-lg {
+        display: flex;
+        flex-direction: row;
+        gap: $gap-20;
+    }
+    
     .display-flex {
         display: flex;
         flex-direction: column;
