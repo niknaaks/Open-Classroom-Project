@@ -10,21 +10,32 @@
     min-width: $min-width-btn;
 }
 
-
-
 .btn-container {
   @include content-center;
   padding: $padding-80;
 }
 
 .btn {
-  box-shadow:$box-shadow;
+  
+  
+  &__primary {
+    border: none;
+  cursor: pointer;
+  background-image: linear-gradient(to top left, $primary, $secondary);
   @include primary-btn();
+  font-size: 0.9rem;
+  font-weight: 300;
+  box-shadow: $box-shadow;
 
-  &:hover {
-    box-shadow: $box-shadow-hover;
-    opacity: 0.9;
-    transition: 1s;
+  h3 {
+    font-family: $font;
   }
 
+
+  &:hover{
+    box-shadow: $box-shadow-hover;
+      opacity: 0.9;
+      transition: 1s;
+  } 
+  }
 }
