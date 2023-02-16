@@ -218,30 +218,39 @@ a {
   object-fit: cover;
 }
 
+.heart-container {
+  position: relative;
+}
 .heart-container .heart {
   margin-left: -30px;
   position: absolute;
   font-size: 30px;
 }
-.heart-container .heart--hover {
-  color: transparent;
-  animation-name: heart-animation;
+.heart-container .heart-bg {
+  background-color: transparent;
 }
-.heart-container .heart--hover :hover {
+.heart-container .heart--hover {
   background-image: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
+  animation-name: heart-animation;
+}
+.heart-container .heart--hover :hover {
+  background-color: transparent;
   animation: heart-animation 0.8s linear;
-  transform-origin: bottom;
 }
 
 @keyframes heart-animation {
   0% {
-    transform: scale(0.5);
     opacity: 0;
+    transform: translateY(100%);
+  }
+  80% {
+    opacity: 0.5;
   }
   100% {
-    transform: scaleY(1);
+    transform: translate(0);
+    overflow: hidden;
     opacity: 1;
   }
 }
