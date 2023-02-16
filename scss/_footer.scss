@@ -10,6 +10,16 @@
 .footer__logo {
     gap: $gap-10;
     padding: 20px;
+
+    .body-container {
+        @include display-flex(column);
+    }
+}
+
+.footer__lg {
+    @include display-flex(column);
+    align-items: flex-start;
+    gap:$gap-5;
 }
 
 

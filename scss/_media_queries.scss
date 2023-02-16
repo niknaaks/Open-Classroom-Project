@@ -2,7 +2,8 @@
 
     .menu-header {
         max-width: 800px;
-    } }
+    } 
+}
 
     .card-menu-lg {
         display: flex;
@@ -80,6 +81,23 @@
         .card-container {
             flex-grow: 1;
         }
+
+
+        .align-center {
+            @include content-center;
+        }
+
+    
+        .footer__title {
+            @include content-center;
+            background-color: red;
+        }
+    
+       
+    
+        
+       
+      
     }
 
 
