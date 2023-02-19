@@ -93,9 +93,11 @@ body {
 }
 .menu-header__arrow {
   position: relative;
-  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
   font-size: 1.3rem;
-  top: 20px;
 }
 .menu-header__logo {
   display: flex;
@@ -104,16 +106,26 @@ body {
   padding: 15px;
 }
 
+.menu-header__shadow {
+  box-shadow: 0px 15px 8px -10px #ccc;
+}
+
 .menu-header__logo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 .menu-header__logo img {
   width: 200px;
 }
 
+.header {
+  position: relative;
+  z-index: 1;
+}
 .header__icon {
   display: flex;
   align-items: center;
@@ -496,10 +508,6 @@ img {
   transition: all 1s;
   transform: transform 1s;
   color: white;
-}
-
-.card-menu__input:checked + label .card-menu__checked {
-  width: 70px;
 }
 
 .card-header__border {

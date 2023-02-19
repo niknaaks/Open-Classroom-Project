@@ -20,9 +20,12 @@ body {
 
     &__arrow {
         position: relative;
-        left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
         font-size: 1.3rem;
-        top: 20px;
+        
     }
     
     &__logo {
@@ -34,10 +37,18 @@ body {
 
 }
 
+.menu-header__shadow {
+    box-shadow:  $box-shadow-homepage;
+}
+
 .menu-header__logo {
     @include display-flex(row);
     justify-content: center;
     width: 100%;
+    
+    position: relative;
+    z-index: 2;
+    
 
     & img {
         width: 200px;
@@ -48,11 +59,14 @@ body {
 
 // The is header on homepage 
 .header {
+    position: relative;
+    z-index: 1;
+    
 
     &__icon {
         @include content-center;
         gap: $gap-10;
-    }
+     }
 
     &__text {
         @include content-center;

@@ -160,12 +160,6 @@
         
     }
 
-// .card-menu-lg {
-//     gap: $gap-20;
-//     display: flex;
-//     flex-direction: column;
-// }
-
     .card-menu {
 
         :hover {
@@ -189,11 +183,6 @@
     transform: transform 1s;
     color: white;
 }
-
-
-    .card-menu__input:checked + label .card-menu__checked {
-        width: 70px;
-    }
 
 
 .card-header {
