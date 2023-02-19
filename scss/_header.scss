@@ -3,27 +3,33 @@ body {
     padding: 0;
 }
 
-.header .menu-header__border {
-    box-shadow: rgba(0, 0, 0, 0.12) 20px 20px 10px 20px;
+.body-container {
+    max-width: 1340px;
+    margin: auto;
+}
+.menu-header__logo {
+    box-sizing: border-box;
 }
 
 .menu-header {
     
     background-color: white;
-    width: 100%;
+    max-width: 100%;
     @include display-flex(row);
     justify-content: center;
 
     &__arrow {
-        position: absolute;
-        left: 20px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
         font-size: 1.3rem;
-        top: 20px;
+        
     }
     
     &__logo {
         @include display-flex(row);
-        width: 180px;
         height: 100%;
         padding: 15px
 
@@ -31,10 +37,18 @@ body {
 
 }
 
+.menu-header__shadow {
+    box-shadow:  $box-shadow-homepage;
+}
+
 .menu-header__logo {
     @include display-flex(row);
     justify-content: center;
     width: 100%;
+    
+    position: relative;
+    z-index: 2;
+    
 
     & img {
         width: 200px;
@@ -45,11 +59,14 @@ body {
 
 // The is header on homepage 
 .header {
+    position: relative;
+    z-index: 1;
+    
 
     &__icon {
         @include content-center;
         gap: $gap-10;
-    }
+     }
 
     &__text {
         @include content-center;
@@ -69,20 +86,20 @@ body {
 //This is background for header 
 
 .menu-item__background {
-    background-image: url("/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 75%,rgb(255, 255, 255) 100%), url("/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
     @include background;
 }
 
 .menu-item__background-2 {
-    background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 75%,rgb(255, 255, 255) 100%), url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     @include background;
 }
 
 .menu-item__background-3 {
-    background-image: url("/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 75%,rgb(255, 255, 255) 100%), url("/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     @include background;
 }
 
 .menu-item__background-4 {
-    background-image: url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 75%,rgb(255, 255, 255) 100%), url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }

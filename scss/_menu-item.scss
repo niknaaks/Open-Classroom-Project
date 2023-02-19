@@ -1,3 +1,7 @@
+.container {
+    padding: $padding-30;
+}
+
 // This is header on menu items page
 
 .menu-item__img {
@@ -41,13 +45,11 @@
 
 // This is item cards on home page
 
-// .menu-title {
-//     // padding: $padding-title;
-// }
 
 .card-menu-container {
     display: flex;
     flex-direction: column;
+    gap: $gap-20;
 }
 
 .primary-container {
@@ -61,7 +63,8 @@
 
 
     .card-menu {
-        @include border();
+        @include border(20px, 0px, 0px);
+        margin-left: 5px;
     
            &:hover {
             background-color: lighten($primary, 35%);
@@ -72,6 +75,7 @@
             @include align-items(center);
             padding: 10px;
             gap: $gap-30;
+
 
             &-number  {
                 @include circle-item;
@@ -84,6 +88,7 @@
     }
     }
 }
+
 
 //This is menu items card on menu page
 
@@ -180,11 +185,6 @@
 }
 
 
-    .card-menu__input:checked + label .card-menu__checked {
-        width: 70px;
-    }
-
-
 .card-header {
         &__border {
             border-bottom: 4px solid $tertiary;
@@ -199,14 +199,16 @@
 .secondary-container .card-menu {
     animation-name: fade-in;
     animation-duration: 1.5s;
-    // animation-timing-function: ease-in;
+    animation-timing-function: linear;
     animation-fill-mode: forwards;
+    opacity: 0;
+    animation-iteration-count: 1;
     
    
 }
 
 .fade-1 {
-    animation-delay: 0.3s;
+    animation-delay: 0s;
    
 }
 
@@ -220,7 +222,10 @@
 
 }
 
+.fade-4 {
+    animation-delay: 1.2s;
 
+}
 
 
 @keyframes fade-in {

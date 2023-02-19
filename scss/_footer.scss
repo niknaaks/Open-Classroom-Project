@@ -1,8 +1,33 @@
 
 
-
 .footer__text {
-    @include display-flex (column); 
+    :hover {
+        color: $primary;
+    }
+}
+
+
+.footer__logo {
     gap: $gap-10;
     padding: 20px;
+
+    .body-container {
+        @include display-flex(column);
+    }
 }
+
+.footer__lg {
+    @include display-flex(column);
+    align-items: flex-start;
+    gap:$gap-5;
+}
+
+
+.footer__icon  {
+    width: $width-5;
+    height: $height-5;
+    margin-right: $margin-right-15;
+  
+}
+
+

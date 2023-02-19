@@ -16,28 +16,29 @@
 </head>
 
 <body>
+    <div class="body-container">
 
-    <header class="menu-header">
+        <header class="menu-header">
 
 
-        <div class="menu-header__arrow">
-            <a href="index.html" aria-label="return to home page"><i class="fa-solid fa-arrow-left"></i></a>
-        </div>
+            <div class="menu-header__arrow">
+                <a href="index.html" aria-label="return to home page"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
 
-        <div class="menu-header__logo">
-            <img src="/images/logo/ohmyfood.png" alt="Ohmyfood logo">
-        </div>
+            <div class="menu-header__logo">
+                <img src="/images/logo/ohmyfood.png" alt="Ohmyfood logo">
+            </div>
 
-    </header>
+        </header>
 
+    </div>
 
     <section>
         <div class="menu-item__background">
         </div>
 
-        <div class="lg-container">
 
-
+        <div class="body-container">
 
             <div class="menu-item__container bg-light-grey">
                 <div class="menu-item__title">
@@ -389,14 +390,15 @@
                 </div>
 
                 <div class="btn-container">
-                    <div class="btn btn-primary">
+                    <button type="button" value="button" class="btn__primary">
                         <h3>Order</h3>
-                    </div>
+                    </button>
                 </div>
 
             </div>
 
         </div>
+
     </section>
 
     </div>
@@ -405,28 +407,42 @@
 
 </body>
 
-<footer class="bg-dark-grey">
+<footer>
+    <div class="footer__logo bg-dark-grey">
 
-    <div class="footer__text">
-        <div class="footer__title">
-            <p class="text-white font-style">ohmyfood</p>
+        <div class="body-container align-center">
+
+
+            <div class="footer__title">
+                <p class="text-white font-style">ohmyfood</p>
+            </div>
+
+            <div class="footer__lg align-center">
+                <div class="footer__text">
+                    <a href="#" class="text-white">
+                        <i class="fa-solid fa-utensils footer__icon"></i>
+                        Suggest a restaurant</a>
+                </div>
+
+                <div class="footer__text">
+                    <a href="#" class="text-white">
+                        <i class="fa-solid fa-handshake-angle footer__icon"></i>
+                        Become a partner</a>
+                </div>
+
+                <div class="footer__text">
+                    <a href="#" class="text-white">Legal</a>
+                </div>
+
+                <div class="footer__text">
+                    <a href="mailto:contactus@onmyfood.com" class="text-white footer__text">Contact</a>
+                </div>
+            </div>
+
+
+
         </div>
-
-        <div class="text-white">
-            <i class="fa-solid fa-utensils"></i>
-            <a href="#" class="text-white"> Suggest a restaurant</a>
-        </div>
-
-        <div class="text-white">
-            <i class="fa-solid fa-handshake-angle"></i>
-            <a href="#" class="text-white">Become a partner</a>
-        </div>
-
-        <a href="#" class="text-white">Legal</a>
-
-        <a href="mailto:contactus@onmyfood.com" class="text-white">Contact</a>
     </div>
-
 
 </footer>
 
