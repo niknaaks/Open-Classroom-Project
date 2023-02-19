@@ -13,11 +13,15 @@ $font-style: 'Shrikhand', cursive;
 //gradient 
 
 $gradient: linear-gradient(to top, #9356DC 50%, #FF79DA 50%);
+$gradient-loading: linear-gradient(#9356DC, #FF79DA);
 
 // utilities
 $border-radius: 20px;
 $border-card: solid 5px transparent;
 $border-radius-50: 50px;
+$border-radius-circle:50%;
+$border-loading:5px solid white;
+
 $height-25: 25px;
 $width-25: 25px;
 $width-5:5px;
@@ -60,6 +64,7 @@ $logo-height: 30px;
 $box-shadow:rgba(0, 0, 0, 0.12) 0px 4px 8px 0px;
 $box-shadow-hover:rgba(0, 0, 0, 0.25) 0px 4px 8px 0px;
 $box-shadow-homepage:0px 15px 8px -10px #ccc;
+$box-shadow-loading:6px 6px 15px #9356DC;
 
 
 //font 

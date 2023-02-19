@@ -1,0 +1,62 @@
+
+.margin-auto {
+   
+    position: relative;
+}
+
+.loading {
+ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    
+
+    &__circle {
+        border-radius: $border-radius-circle;
+        @include content-center();
+        z-index: 2;
+        position: relative;
+        border: $border-loading;
+        box-shadow: $box-shadow-loading;
+        overflow: hidden;
+        height: 200px;
+        width: 200px;  
+        flex-grow: 0;
+    
+    }
+
+    &__text {
+        color: white;
+        font-family:'Shrikhand', cursive;
+        position: relative;
+        font-size:1.1rem;
+        z-index:2;
+    }
+
+    &__wave {
+        background:$gradient-loading;
+        animation: loading, wave 3s ease-in-out infinite;
+        height:600px;
+        width:600px;
+        position:absolute;
+        z-index:1;
+        border-radius:38%;
+      
+      }
+
+}
+
+@keyframes wave {
+	0% {
+		transform: rotate(0);
+		top: 100%;
+	}
+ 
+  
+	100% {
+		transform: rotate(-360deg);
+		top: 0%;
+	}
+}
+
