@@ -11,6 +11,12 @@
         gap: $gap-20;
     }
 
+    .footer__lg {
+        @include display-flex(column);
+        align-items: flex-start;
+        gap:$gap-5;
+    }
+
   
 
 
@@ -90,7 +96,6 @@
     
         .footer__title {
             @include content-center;
-            background-color: red;
         }
     
        

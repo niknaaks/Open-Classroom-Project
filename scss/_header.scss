@@ -17,6 +17,7 @@ body {
     max-width: 100%;
     @include display-flex(row);
     justify-content: center;
+  
 
     &__arrow {
         position: relative;
@@ -47,7 +48,7 @@ body {
     width: 100%;
     
     position: relative;
-    z-index: 2;
+    z-index: 1;
     
 
     & img {

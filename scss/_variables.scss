@@ -6,12 +6,22 @@ $font-weight: (
     "normal":500,
     "light":300,
 );
+$font-weight-light:300;
+$font-weight-normal:500;
+$font-weight-bold:700;
 $font-size-small:17px;
 $font-size-big:20px;
 $font-style: 'Shrikhand', cursive;
 
-//gradient 
+//font 
+$primary-font: "Roboto", 'sans-serif';
+$font-size-sm:15px;
 
+
+//font-sizing
+$font-text: 1.1rem;
+
+//gradient 
 $gradient: linear-gradient(to top, #9356DC 50%, #FF79DA 50%);
 $gradient-loading: linear-gradient(#9356DC, #FF79DA);
 
@@ -22,15 +32,23 @@ $border-radius-50: 50px;
 $border-radius-circle:50%;
 $border-loading:5px solid white;
 
-$height-25: 25px;
-$width-25: 25px;
-$width-5:5px;
+//height
+$height-0:0;
 $height-5:5px;
-
-
+$height-25: 25px;
+$height-200:200px;
+$height-100:100%;
 $height-card-img: 200px;
 $height-card-img-lg:400px;
+
+
+//width
+$width-5:5px;
+$width-25: 25px;
+$width-200:200px;
+$width-100:100%;
 $min-width-card: 300px;
+
 
 //gap 
 $gap-5:5px;
@@ -53,23 +71,21 @@ $padding-top:-15px;
 $padding-container:5px;
 $padding-title: 20px 20px 1px 20px;
 
-// btn width
+// btn 
 $max-width-btn: 300px;
 $min-width-btn:275px;
+$font-size-btn:0.9rem;
+$btn-opacity:0.85;
+$box-shadow-hover:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+
 
 // height
 $logo-height: 30px;
 
 //box-shadow
-$box-shadow:rgba(0, 0, 0, 0.12) 0px 4px 8px 0px;
-$box-shadow-hover:rgba(0, 0, 0, 0.25) 0px 4px 8px 0px;
+$box-shadow:rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
 $box-shadow-homepage:0px 15px 8px -10px #ccc;
 $box-shadow-loading:6px 6px 15px #9356DC;
-
-
-//font 
-$primary-font: "Roboto", 'sans-serif';
-$font-size-sm:15px;
 
 
 // colors 
@@ -93,5 +109,10 @@ $colours: (
     
 );
 
+
+//wave 
+$height-wave:600px;
+$width-wave:600px;
+$border-radius-wave:38%;
 
 

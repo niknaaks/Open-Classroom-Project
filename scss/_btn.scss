@@ -17,15 +17,14 @@
 
 .btn {
   
-  
   &__primary {
     border: none;
-  cursor: pointer;
-  background-image: linear-gradient(to top left, $primary, $secondary);
-  @include primary-btn();
-  font-size: 0.9rem;
-  font-weight: 300;
-  box-shadow: $box-shadow;
+    cursor: pointer;
+    background-image: linear-gradient(to top left, $primary, $secondary);
+    @include primary-btn();
+    font-size: $font-size-btn;
+    font-weight: $font-weight-light;
+    box-shadow: $box-shadow;
 
   h3 {
     font-family: $font;
@@ -34,7 +33,7 @@
 
   &:hover{
     box-shadow: $box-shadow-hover;
-      opacity: 0.9;
+      opacity: $btn-opacity;
       transition: 1s;
   } 
   }

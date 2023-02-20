@@ -1,15 +1,21 @@
 
-.margin-auto {
-   
-    position: relative;
-}
 
-.loading {
+
+
+.loader {
  
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
+    position: fixed;
+    @include content-center();
+    top: 0;
+    left: 0;
+    animation: loader-overlay 4.5s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: white;
+    width: $width-100;
+    height: $height-100;
+    overflow: hidden;
+    z-index: 2;
     
 
     &__circle {
@@ -20,28 +26,29 @@
         border: $border-loading;
         box-shadow: $box-shadow-loading;
         overflow: hidden;
-        height: 200px;
-        width: 200px;  
+        height: $height-200;
+        width: $width-200;  
         flex-grow: 0;
     
     }
 
     &__text {
         color: white;
-        font-family:'Shrikhand', cursive;
+        font-family:$font-style;
         position: relative;
-        font-size:1.1rem;
+        font-size:$font-text;
         z-index:2;
     }
 
     &__wave {
         background:$gradient-loading;
-        animation: loading, wave 3s ease-in-out infinite;
-        height:600px;
-        width:600px;
+        animation: loading, wave 3s ease-in-out;
+        animation-fill-mode: forwards;
+        height:$height-wave;
+        width:$width-wave;
         position:absolute;
         z-index:1;
-        border-radius:38%;
+        border-radius:$border-radius-wave;
       
       }
 
@@ -57,6 +64,29 @@
 	100% {
 		transform: rotate(-360deg);
 		top: 0%;
+	}
+}
+
+@keyframes loader-overlay {
+	0% {
+		opacity: 1;
+	}
+
+
+    80% {
+        opacity: 1;
+        height: $height-100;
+        
+    }
+
+	
+	99% {
+		opacity: 1;  
+		
+	}
+	
+	100% {
+		height: $height-0;
 	}
 }
 

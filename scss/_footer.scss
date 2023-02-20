@@ -17,7 +17,7 @@
 }
 
 .footer__lg {
-    @include display-flex(column);
+    @include display-flex(row);
     align-items: flex-start;
     gap:$gap-5;
 }
