@@ -68,6 +68,10 @@
     
            &:hover {
             background-color: lighten($primary, 35%);
+            color: $primary;
+          
+
+
            }
 
             &__body {
@@ -83,12 +87,29 @@
                 justify-content: center;
                 margin-left: $margin-left-card;
                 font-size: $font-size-sm;
+                flex-grow: 0;
             }
 
     }
     }
 }
 
+.card-menu {
+    &:hover {
+        &__body {
+            &-icon {
+                    color: $primary;
+            }
+        }
+    }
+    
+}
+
+.card-menu__body-icon {
+    &:hover {
+        color: $primary;
+    }
+}
 
 //This is menu items card on menu page
 

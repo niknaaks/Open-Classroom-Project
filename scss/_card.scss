@@ -4,7 +4,12 @@ a {
 
 }
 
-.cards {
+.cards-container {
+  @include display-flex(column);
+  gap: $gap-30;
+}
+
+.cards-lg {
   @include display-flex(column);
   gap: $gap-30;
 }

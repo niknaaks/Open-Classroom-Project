@@ -70,16 +70,23 @@
     }
 
     .cards {
-        display: flex;
-        flex-direction: row;
+        @include display-flex (row);
+        flex-wrap: wrap;
+    }
+
+    .cards-container {
+        @include display-flex (row);
+        flex-wrap: wrap;
     }
 
     .cards-lg {
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+     
         justify-content: center;
         gap: $gap-20;
-        width: 100%;
+        // width: 100%;
+        flex-grow: 0;
 
         }
 
