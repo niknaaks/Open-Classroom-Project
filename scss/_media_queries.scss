@@ -11,11 +11,11 @@
         gap: $gap-20;
     }
 
-    .footer__lg {
-        @include display-flex(column);
-        align-items: flex-start;
-        gap:$gap-5;
-    }
+    // .footer__lg {
+    //     @include display-flex(column);
+    //     align-items: flex-start;
+    //     gap:$gap-5;
+    // }
 
   
 
@@ -93,13 +93,15 @@
             @include content-center;
         }
 
-    
-        .footer__title {
-            @include content-center;
-        }
-    
        
-    
+    .footer__title {
+        @include display-flex (row);
+        justify-content: center;
+    }
+
+    .footer__body {
+        align-items: center;
+    }
         
        
       
