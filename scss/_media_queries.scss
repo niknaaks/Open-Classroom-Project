@@ -3,6 +3,18 @@
     .menu-header {
         max-width: 800px;
     } 
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: $gap-20;
+    }
+
+    .cards-lg {
+        @include display-flex (column);
+        gap: $gap-20;
+    }
+
 }
 
     .card-menu-lg {
@@ -26,6 +38,12 @@
         display: flex;
         
     }
+
+    .cards-lg {
+        @include display-flex (column);
+        gap: $gap-10;
+    }
+
 
      .card-menu-lg {
         display: flex;
@@ -75,8 +93,7 @@
     }
 
     .cards-container {
-        @include display-flex (row);
-        flex-wrap: wrap;
+        @include display-flex (column);
     }
 
     .cards-lg {
@@ -110,6 +127,11 @@
         align-items: center;
     }
         
+
+    .cards-section {
+        display: flex;
+        gap: $gap-20;
+    }
        
       
     }

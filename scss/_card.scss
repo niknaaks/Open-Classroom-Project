@@ -4,15 +4,6 @@ a {
 
 }
 
-.cards-container {
-  @include display-flex(column);
-  gap: $gap-30;
-}
-
-.cards-lg {
-  @include display-flex(column);
-  gap: $gap-30;
-}
 
 // This is the card
 
@@ -67,6 +58,10 @@ a {
       @include card-img;
     }
    
+}
+
+.cards-container {
+  gap: $gap-20;
 }
 
 // This is the heart container
