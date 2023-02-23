@@ -12,7 +12,7 @@ body {
 
 .menu-header {
     
-    background-color: white;
+    // background-color: white;
     max-width:$width-100;
     @include display-flex(row);
     justify-content: center;
@@ -24,6 +24,7 @@ body {
         align-items: center;
         width: $width-arrow;
         font-size: $font-arow;
+
     }
     
     &__logo {
@@ -33,6 +34,12 @@ body {
 
 }
 
+}
+
+.menu-header__arrow a {
+    position: absolute;
+    top: 20px;
+    left: 25px;
 }
 
 .menu-header__logo {

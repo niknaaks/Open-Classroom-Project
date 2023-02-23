@@ -31,8 +31,6 @@
     .menu-item__title {
      @include display-flex(row);
     justify-content: space-between;
-    min-width: 150px;
-
 
     }
  
@@ -41,6 +39,7 @@
         align-items: center;
     }
 }
+
 
 // This is the menu items on the menu pages
 
@@ -153,9 +152,7 @@
            &:hover {
             background-color: lighten($primary, 35%);
             color: $primary;
-          
-
-
+        
            }
 
             &__body {
@@ -171,12 +168,13 @@
                 justify-content: center;
                 margin-left: $margin-left-card;
                 font-size: $font-size-sm;
-                flex-grow: 0;
+                min-width: 25px;
             }
 
     }
     }
 }
+
 
 .card-menu {
     &:hover {

@@ -1,15 +1,6 @@
 // This is the primary button
 
-@mixin primary-btn {
-  cursor: pointer;
-    text-align: center;
-    color: white;
-    border-radius: $border-radius-50;
-    padding: $padding-2;
-    margin: $margin-10;
-    max-width: $max-width-btn;
-    min-width: $min-width-btn;
-}
+
 
 .btn-container {
   @include content-center;
