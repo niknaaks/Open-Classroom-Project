@@ -1,6 +1,6 @@
 
 
-//background and text colours 
+//This is the background and text colors applied on html 
 @each $key, $val in $colours {
     .text-#{$key} {
         color: $val;

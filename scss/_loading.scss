@@ -1,0 +1,96 @@
+
+
+// This is the loader
+
+.loader {
+ 
+    position: fixed;
+    @include content-center();
+    top: 0;
+    left: 0;
+    animation: loader-overlay 4.5s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: white;
+    width: $width-100;
+    height: $height-100;
+    overflow: hidden;
+    z-index: 3;
+    
+
+    &__circle {
+        border-radius: $border-radius-circle;
+        @include content-center();
+        z-index: 3;
+        position: relative;
+        border: $border-loading;
+        box-shadow: $box-shadow-loading;
+        overflow: hidden;
+        height: $height-200;
+        width: $width-200;  
+        flex-grow: 0;
+    
+    }
+
+    &__text {
+        color: white;
+        font-family:$font-style;
+        position: relative;
+        font-size:$font-text;
+        z-index:2;
+    }
+
+    &__wave {
+        background:$gradient-loading;
+        animation: loading, wave 3s ease-in-out;
+        animation-fill-mode: forwards;
+        height:$height-wave;
+        width:$width-wave;
+        position:absolute;
+        z-index:1;
+        border-radius:$border-radius-wave;
+      
+      }
+
+}
+
+// This is the animation for the wave
+
+@keyframes wave {
+	0% {
+		transform: rotate(0);
+		top: 100%;
+	}
+ 
+  
+	100% {
+		transform: rotate(-360deg);
+		top: 0%;
+	}
+}
+
+// This is the animation for overlay
+
+@keyframes loader-overlay {
+	0% {
+		opacity: 1;
+	}
+
+
+    80% {
+        opacity: 1;
+        height: $height-100;
+        
+    }
+
+	
+	99% {
+		opacity: 1;  
+		
+	}
+	
+	100% {
+		height: $height-0;
+	}
+}
+

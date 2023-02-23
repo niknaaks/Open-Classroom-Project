@@ -1,21 +1,19 @@
 a {
   text-decoration: none;
   color: black;
+
 }
+
+
+// This is the card
 
 .card {
-box-sizing: border-box;
-
-  &:hover {
-    box-shadow: $box-shadow-hover;
+  box-sizing: border-box;
+  
+    &:hover {
+      box-shadow: $box-shadow-hover;
+    }
   }
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  gap: $gap-30;
-}
 
 .card {
   box-sizing: border-box;
@@ -28,10 +26,10 @@ box-sizing: border-box;
    &__new {
     position: absolute;
    @include display-flex(row);
-    top: 20px;
-    right: 10px;
-    width: 120px;
-    height: 40px;
+    top: $top-20;
+    right: $right-10;
+    width: $width-125;
+    height: $height-40;
     align-items: center;
     justify-content: center;
     @include border-card ($radius:5px);
@@ -46,8 +44,8 @@ box-sizing: border-box;
     
 
     h3 {
-      padding: 2px;
-      margin: 0px;
+      padding: $padding-2;
+      margin: $margin-0;
     }
 
    }
@@ -62,12 +60,17 @@ box-sizing: border-box;
    
 }
 
+.cards-container {
+  gap: $gap-20;
+}
+
+// This is the heart container
 
 .heart-container { 
   .heart {
-    margin-left: -30px;
+    margin-left: $margin-left-heart;
     position: absolute;
-    font-size: 30px;
+    font-size: $font-heart;
     
   }
 
@@ -87,6 +90,8 @@ box-sizing: border-box;
 
    }
  }
+
+//  This is the heart animation 
 
  @keyframes heart-animation {
   0% {

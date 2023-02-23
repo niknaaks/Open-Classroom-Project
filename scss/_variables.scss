@@ -6,27 +6,59 @@ $font-weight: (
     "normal":500,
     "light":300,
 );
+$font-weight-light:300;
+$font-weight-normal:500;
+$font-weight-bold:700;
 $font-size-small:17px;
 $font-size-big:20px;
 $font-style: 'Shrikhand', cursive;
 
-//gradient 
+//font 
+$primary-font: "Roboto", 'sans-serif';
+$font-size-sm:15px;
 
+
+//font-sizing
+$font-text: 1.1rem;
+$font-heart:30px;
+$font-arow:1.3rem;
+$font-footer-title:1.4rem;
+$font-menu-title:1.25rem;
+
+//gradient 
 $gradient: linear-gradient(to top, #9356DC 50%, #FF79DA 50%);
+$gradient-loading: linear-gradient(#9356DC, #FF79DA);
 
 // utilities
+$top-20:20px;
+$right-10:10px;
 $border-radius: 20px;
 $border-card: solid 5px transparent;
 $border-radius-50: 50px;
-$height-25: 25px;
-$width-25: 25px;
-$width-5:5px;
+$border-radius-circle:50%;
+$border-loading:5px solid white;
+
+//height
+$height-0:0;
 $height-5:5px;
-
-
+$height-25: 25px;
+$height-40:40px;
+$height-200:200px;
+$height-100:100%;
 $height-card-img: 200px;
 $height-card-img-lg:400px;
+
+
+//width
+$width-5:5px;
+$width-25: 25px;
+$width-125:120px;
+$width-200:200px;
+$width-arrow:100px;
+$width-100:100%;
 $min-width-card: 300px;
+$max-width-screen:1340px;
+
 
 //gap 
 $gap-5:5px;
@@ -36,6 +68,9 @@ $gap-20:20px;
 $gap-30: 30px;
 
 //margin
+$margin-0:0;
+$margin-top-100:-100px;
+$margin-left-heart: -30px;
 $margin-left-card: -25px;
 $margin-10: 10px;
 $margin-right-15:15px;
@@ -43,28 +78,28 @@ $margin-right-15:15px;
 //padding 
 $padding-2: 2px;
 $padding-15:15px;
+$padding-20:20px;
 $padding-80: 80px;
 $padding-30:30px;
 $padding-top:-15px;
 $padding-container:5px;
 $padding-title: 20px 20px 1px 20px;
 
-// btn width
+// btn 
 $max-width-btn: 300px;
 $min-width-btn:275px;
+$font-size-btn:0.9rem;
+$btn-opacity:0.85;
+$box-shadow-hover:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+
 
 // height
 $logo-height: 30px;
 
 //box-shadow
-$box-shadow:rgba(0, 0, 0, 0.12) 0px 4px 8px 0px;
-$box-shadow-hover:rgba(0, 0, 0, 0.25) 0px 4px 8px 0px;
+$box-shadow:rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
 $box-shadow-homepage:0px 15px 8px -10px #ccc;
-
-
-//font 
-$primary-font: "Roboto", 'sans-serif';
-$font-size-sm:15px;
+$box-shadow-loading:6px 6px 15px #9356DC;
 
 
 // colors 
@@ -88,5 +123,10 @@ $colours: (
     
 );
 
+
+//wave 
+$height-wave:600px;
+$width-wave:600px;
+$border-radius-wave:38%;
 
 

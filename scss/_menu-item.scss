@@ -21,7 +21,7 @@
 .menu-item__container {
     border-radius: 30px 30px 0px 0px;
     border: $border-card;
-    margin-top: -100px;
+    margin-top: $margin-top-100;
     position: relative;
     @include display-flex(column);
     padding: $padding-15;
@@ -40,6 +40,90 @@
         @include display-flex(row);
         align-items: center;
     }
+}
+
+// This is the menu items on the menu pages
+
+.menu-item {
+        @include display-flex(row);
+        box-sizing: border-box;
+        @include border($radius: 20px,$border-padding:0px, $border-margin:0px);
+        overflow: hidden;
+        cursor: pointer;
+    &__body {
+        width: $width-100;
+        padding: $padding-15;
+        overflow: hidden;
+        height: $height-100;
+      
+    }
+
+    &__price {
+        display: flex;
+        align-self: flex-end;
+        padding: $padding-15;
+        font-size: $font-text;
+    }
+
+    &__checked {
+        width: 0;
+        overflow: hidden;
+        transition: width 1s;
+        background-color: $tertiary;
+        @include content-center;
+        font-size: $font-size-big;
+    }
+}
+
+// This is the hover effect on menu items 
+
+.menu-item:hover {
+    .menu-item__checked {
+        width: 75px;
+
+    .menu-item__checked--icon {
+        -webkit-transform: icon rotate(360deg);
+            transform: rotate(360deg);
+    }
+    }
+
+
+}
+
+.menu-item {
+    &:hover {
+        &__checked {
+            width: 75px;
+
+            &--icon {
+            -webkit-transform: icon rotate(360deg);
+            transform: rotate(360deg);
+            
+            }
+        }
+    }
+}
+
+.menu-item__checked--icon {
+    transition: all 1s;
+    transform: transform 1s;
+    color: white;
+}
+
+.menu-item__title strong {
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size:$font-menu-title;
+}
+    
+.menu-item__text {
+    margin: 0;
+	font-size: $font-text;
+    text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 
@@ -68,6 +152,10 @@
     
            &:hover {
             background-color: lighten($primary, 35%);
+            color: $primary;
+          
+
+
            }
 
             &__body {
@@ -83,14 +171,34 @@
                 justify-content: center;
                 margin-left: $margin-left-card;
                 font-size: $font-size-sm;
+                flex-grow: 0;
             }
 
     }
     }
 }
 
+.card-menu {
+    &:hover {
+        &__body {
+            &-icon {
+                    color: $primary;
+            }
+        }
+    }
+    
+}
+
+.card-menu__body-icon {
+    &:hover {
+        color: $primary;
+    }
+}
 
 //This is menu items card on menu page
+
+
+
 
 .secondary-container {
     @include display-flex(column);
@@ -103,7 +211,6 @@
 
 
     .card-menu {
-
         cursor: pointer;
         overflow: hidden;
 
@@ -124,6 +231,7 @@
             @include font-style;
             flex-grow: 1;
             padding: $padding-15;
+            overflow: hidden;
            }
 
            &__title {
@@ -140,9 +248,6 @@
                white-space: nowrap;
                display: flex;
                justify-content: space-between;
-               
-               
-
 
             }
 
@@ -160,13 +265,21 @@
         
     }
 
+
+    // .card-menu__title {
+    //     text-overflow: ellipsis;
+    //     overflow: hidden;
+    //     white-space: nowrap;
+    //     margin: 0;
+    // }
+
     .card-menu {
 
         :hover {
         cursor: pointer;
 
         .card-menu__checked {
-            width: 70px;
+            width: 75px;
         }
 
         .card-menu__checked--icon {
@@ -205,6 +318,15 @@
     animation-iteration-count: 1;
     
    
+}
+
+.menu-item {
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-iteration-count: 1;
 }
 
 .fade-1 {
