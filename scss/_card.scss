@@ -68,10 +68,12 @@ a {
 // This is the heart container
 
 .heart-container { 
+
   .heart {
     margin-left: $margin-left-heart;
     position: absolute;
     font-size: $font-heart;
+    display: flex;
     
   }
 

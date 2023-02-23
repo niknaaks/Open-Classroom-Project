@@ -42,7 +42,7 @@
 
     &__wave {
         background:$gradient-loading;
-        animation: loading, wave 3s ease-in-out;
+        animation: loading, wave 3.5s ease-in-out;
         animation-fill-mode: forwards;
         height:$height-wave;
         width:$width-wave;
@@ -85,7 +85,7 @@
 
 	
 	99% {
-		opacity: 1;  
+		opacity: 0;  
 		
 	}
 	
