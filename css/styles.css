@@ -535,7 +535,6 @@ img {
 }
 .primary-container .card-menu:hover {
   background-color: #f2eafb;
-  color: #9356DC;
 }
 .primary-container .card-menu__body {
   display: flex;
