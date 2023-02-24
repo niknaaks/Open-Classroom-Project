@@ -189,7 +189,7 @@ body {
 }
 
 .menu-item__background {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 75%, rgb(255, 255, 255) 100%), url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 75%, rgb(255, 255, 255) 100%), url("/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   width: 100%;
   height: 350px;
   background-size: cover;
@@ -199,7 +199,7 @@ body {
 }
 
 .menu-item__background-2 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 75%, rgb(255, 255, 255) 100%), url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 75%, rgb(255, 255, 255) 100%), url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   width: 100%;
   height: 350px;
   background-size: cover;
@@ -209,7 +209,7 @@ body {
 }
 
 .menu-item__background-3 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 75%, rgb(255, 255, 255) 100%), url("images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 75%, rgb(255, 255, 255) 100%), url("/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
   width: 100%;
   height: 350px;
   background-size: cover;
@@ -219,7 +219,7 @@ body {
 }
 
 .menu-item__background-4 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 75%, rgb(255, 255, 255) 100%), url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 75%, rgb(255, 255, 255) 100%), url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   width: 100%;
   height: 350px;
   background-size: cover;
