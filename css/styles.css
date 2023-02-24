@@ -834,14 +834,16 @@ h4, h5, h6 {
   0% {
     opacity: 1;
   }
-  98% {
+  80% {
     opacity: 1;
   }
-  99% {
-    opacity: 0.5;
+  95% {
+    opacity: 0;
+    height: 100%;
   }
   100% {
     opacity: 0;
+    height: 0;
   }
 }
 
