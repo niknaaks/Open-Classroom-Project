@@ -175,17 +175,6 @@
 }
 
 
-.card-menu {
-    &:hover {
-        &__body {
-            &-icon {
-                    color: $primary;
-            }
-        }
-    }
-    
-}
-
 .card-menu__body--icon {
     &:hover {
         color: $primary;

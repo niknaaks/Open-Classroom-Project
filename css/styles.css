@@ -540,10 +540,6 @@ img {
   min-width: 25px;
 }
 
-.card-menu:hover__body-icon {
-  color: #9356DC;
-}
-
 .card-menu__body--icon:hover {
   color: #9356DC;
 }
