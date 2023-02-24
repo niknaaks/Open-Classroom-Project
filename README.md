@@ -1,2 +1,2 @@
 # Open-Classroom-Project
- Integrate a mobile website with animations in CSS
+https://niknaaks.github.io/Open-Classroom-Project/
