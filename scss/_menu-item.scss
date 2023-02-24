@@ -89,23 +89,22 @@
 
 }
 
-.menu-item {
-    &:hover {
-        &__checked {
-            width: 75px;
+// .menu-item {
+//     &:hover {
+//         &__checked {
+//             width: 75px;
 
-            &--icon {
-            -webkit-transform: icon rotate(360deg);
-            transform: rotate(360deg);
+//             &--icon {
+//             -webkit-transform: icon rotate(360deg);
+//             transform: rotate(360deg);
             
-            }
-        }
-    }
-}
+//             }
+//         }
+//     }
+// }
 
 .menu-item__checked--icon {
     transition: all 1s;
-    transform: transform 1s;
     color: white;
 }
 
@@ -187,7 +186,7 @@
     
 }
 
-.card-menu__body-icon {
+.card-menu__body--icon {
     &:hover {
         color: $primary;
     }
@@ -291,7 +290,6 @@
 
     .card-menu__checked--icon {
     transition: all 1s;
-    transform: transform 1s;
     color: white;
 }
 

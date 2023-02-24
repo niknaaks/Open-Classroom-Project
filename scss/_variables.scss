@@ -26,7 +26,7 @@ $font-footer-title:1.4rem;
 $font-menu-title:1.25rem;
 
 //gradient 
-$gradient: linear-gradient(to top, #9356DC 50%, #FF79DA 50%);
+// $gradient: linear-gradient(to top, #9356DC 50%, #FF79DA 50%);
 $gradient-loading: linear-gradient(#9356DC, #FF79DA);
 
 // utilities
@@ -88,7 +88,7 @@ $padding-title: 20px 20px 1px 20px;
 // btn 
 $max-width-btn: 300px;
 $min-width-btn:255px;
-$font-size-btn:0.9rem;
+$font-size-btn:1rem;
 $btn-opacity:0.85;
 $box-shadow-hover:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
 
@@ -110,8 +110,7 @@ $tertiary: #99E2D0;
 $colours: (
     "primary": $primary,
     "secondary": $secondary,
-    "tertiary"
-    "gradient": $gradient,
+    // "gradient": $gradient,
     "grey": #D3D3D3,
     "grey-medium-1": #eaeaea,
     "grey-medium": #666666, 
