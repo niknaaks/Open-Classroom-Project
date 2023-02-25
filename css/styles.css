@@ -142,6 +142,7 @@ body {
   position: absolute;
   top: 22px;
   left: 25px;
+  z-index: 1;
 }
 
 .menu-header__logo {
