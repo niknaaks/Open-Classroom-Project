@@ -19,11 +19,17 @@
         display: flex;
         flex-direction: column;
         gap: $gap-20;
+        
     }
 
     .cards-lg {
         @include display-flex (column);
         gap: $gap-20;
+        
+    }
+
+    .card-container {
+        flex-basis: 0%;
     }
 
 }
@@ -34,11 +40,7 @@
         gap: $gap-20;
     }
 
-    // .footer__lg {
-    //     @include display-flex(column);
-    //     align-items: flex-start;
-    //     gap:$gap-5;
-    // }
+
 
   
 

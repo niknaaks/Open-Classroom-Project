@@ -60,6 +60,9 @@ a {
    
 }
 
+.card-container {
+  flex-basis: 0%;
+}
 
 .cards-container {
   gap: $gap-20;
