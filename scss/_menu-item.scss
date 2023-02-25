@@ -71,6 +71,7 @@
         background-color: $tertiary;
         @include content-center;
         font-size: $font-size-big;
+       
     }
 }
 
@@ -78,7 +79,8 @@
 
 .menu-item:hover {
     .menu-item__checked {
-        width: 75px;
+        width: 70px;
+        flex-shrink: 0;
 
     .menu-item__checked--icon {
         -webkit-transform: icon rotate(360deg);

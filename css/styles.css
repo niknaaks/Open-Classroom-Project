@@ -477,7 +477,8 @@ img {
 }
 
 .menu-item:hover .menu-item__checked {
-  width: 75px;
+  width: 70px;
+  flex-shrink: 0;
 }
 .menu-item:hover .menu-item__checked .menu-item__checked--icon {
   -webkit-transform: icon rotate(360deg);
