@@ -14,8 +14,6 @@ body {
     
     // background-color: white;
     max-width:$width-100;
-    @include display-flex(row);
-    justify-content: center;
 
     &__arrow {
         position: relative;
